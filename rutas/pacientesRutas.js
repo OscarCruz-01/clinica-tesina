@@ -10,11 +10,11 @@ const {
 } = require('../controladores/pacientesControlador');
 
 // Rutas de pacientes
-router.get('/pacientes', obtenerPacientes);
-router.get('/pacientes/:id', obtenerPacientePorID);
-router.post('/pacientes', crearPaciente);
-router.put('/pacientes/:id', actualizarPaciente);
-router.delete('/pacientes/:id', eliminarPaciente);
+router.get('/', obtenerPacientes);
+router.get('/:id', obtenerPacientePorID);
+router.post('/', crearPaciente);
+router.put('/:id', actualizarPaciente);
+router.delete('/:id', eliminarPaciente);
 
 
 
